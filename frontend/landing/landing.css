@@ -1,0 +1,98 @@
+.container {
+    display: inline-block;
+    border-radius: 10px; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+@font-face {
+    font-family: 'Iosevka-Bold';
+    src: url('../font/Iosevka/IosevkaNerdFont-Bold.ttf') format('truetype');
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; 
+}
+
+.line {
+  border: 0;
+  border-top: 1px solid #FFFFFF;
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  margin-top: 250px;
+}
+
+.centered-content h1,
+.centered-content h2,
+.centered-content a {
+  display: flex;
+  justify-content: center;
+  font-family: Iosevka-Bold;
+  margin-top: 20px; 
+}
+
+
+
+#photo {
+    background-color:#FFFFFF;
+    width: 380px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid transparent; 
+    animation: rainbow-outline 7s linear infinite;
+}
+
+@keyframes rainbow-outline {
+    100%, 0% {
+        border-color: rgb(255, 0, 0);
+    }
+    8% {
+        border-color: rgb(255, 127, 0);
+    }
+    16% {
+        border-color: rgb(255, 255, 0);
+    }
+    25% {
+        border-color: rgb(127, 255, 0);
+    }
+    33% {
+        border-color: rgb(0, 255, 0);
+    }
+    41% {
+        border-color: rgb(0, 255, 127);
+    }
+    50% {
+        border-color: rgb(0, 255, 255);
+    }
+    58% {
+        border-color: rgb(0, 127, 255);
+    }
+    66% {
+        border-color: rgb(0, 0, 255);
+    }
+    75% {
+        border-color: rgb(127, 0, 255);
+    }
+    83% {
+        border-color: rgb(255, 0, 255);
+    }
+    91% {
+        border-color: rgb(255, 0, 127);
+    }
+}
+
